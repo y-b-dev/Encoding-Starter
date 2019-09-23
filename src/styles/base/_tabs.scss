@@ -1,0 +1,22 @@
+.tabs-wrapper {
+
+  .products-content {
+    min-height: 490px;
+    background: $windowColor;
+    box-shadow: 0 1px 1px #d9e4ea;
+    border: 1px solid $magazine-border;
+    @include padding(25px,25px,25px,25px);
+    @include margin(0,0,20px,115px);
+    .product-tab-content {
+
+    }
+  }
+
+  .tab-content-container {
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+
+}

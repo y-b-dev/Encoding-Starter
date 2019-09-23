@@ -1,0 +1,27 @@
+/* Vertical center children
+	Example usage:
+	HTML:
+	<div class="container">
+	  <div class="child">This div gets vertically centered :)</div>
+	</div>
+	SCSS:
+	.container {
+	  @include vertical-center-children(200px);
+	}
+*/
+@mixin vertical-center-children($height: auto, $children: ':first-child') {
+  display: table;
+  height: $height;
+
+  #{$children} {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+
+/* Margin center */
+@mixin margin-center {
+	margin-right: auto;
+	margin-left: auto;
+}

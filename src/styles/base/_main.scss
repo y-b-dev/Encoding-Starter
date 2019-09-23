@@ -1,0 +1,296 @@
+@import "variables";
+@import '../utils/mixins';
+
+main {
+  @include bgc($main-bgc-primary);
+  margin-top: -2% !important;
+  position: relative;
+  border-radius: 10px;
+  color: $txt-color-light;
+
+  h2, h3 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    line-height: 48px;
+  }
+
+  h3 {
+    @media (max-width: 1150px) {
+      font-size: 1.3rem;
+    }
+    @include breakpoint(xs) {
+      @include pad-bottom();
+    }
+  }
+
+  // TOP PART
+
+  .top-part {
+    padding: 1%;
+    font-size: 1.125rem;
+    line-height: 20px;
+    .top-part-icon {
+      @include margin-left(.2rem);
+    }
+  }
+
+  .left-arrow {
+    @include margin-right(2rem);
+    @include margin-left(1rem);
+    position: relative;
+    background-color: $main-arrow-bgc;
+    border: 1px solid $main-border-color;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+
+  .num-font-size {
+    font-size: 50px;
+    line-height: 51px;
+  }
+
+  .par-fill {
+    max-width: 94px;
+  }
+
+  .par-offers {
+    max-width: 145px;
+  }
+
+  .par-agent {
+    max-width: 110px;
+  }
+
+  .par-policy {
+    max-width: 92px;
+  }
+
+  //    SIDE PART
+
+  .side-content {
+    width: 28%;
+    margin: 0 2%;
+    @include breakpoint(lg) {
+      width: 23%;
+    }
+    @media (max-width: 1150px) {
+      width: 18%;
+    }
+  }
+
+  .banner {
+    padding: 8rem 0;
+  }
+
+  //  CENTER PART
+
+  .main-content-wrapper {
+    @include pad-top(1%);
+    @include breakpoint(xs) {
+      @include pad-top(0);
+    }
+  }
+
+  .main-content {
+    width: 70%;
+    @include breakpoint(lg) {
+      width: 75%;
+    }
+    @media (max-width: 1150px) {
+      width: 80%;
+    }
+    @include breakpoint(xs) {
+      width: 100%;
+    }
+  }
+
+  .agents-found {
+    background-color: $main-agents-found-bgc;
+    @include breakpoint(xs) {
+      @include txt-align(center);
+      background-color: #e9eff2;
+    }
+  }
+
+  .sort-by {
+    border-top: none;
+    border-left: none;
+    @include breakpoint(xs) {
+      justify-content: space-evenly !important;
+      padding: .5rem .2rem;
+    }
+    select {
+        font-size: 15px;
+    }
+  }
+
+  .right-sort-xs, .left-sort-xs {
+    @include filter-select(45%);
+    color: $txt-color-light;
+    //background: url('/src/images/sprites/icons/arrow.png') 20px center no-repeat;
+    //font-size: 1rem;
+    padding: 10px;
+  }
+
+  .right-sort, .left-sort {
+      line-height: 24px;
+      select {
+          @include icon-select();
+        }
+  }
+
+  .right-sort {
+    select {
+      @include filter-select(7.5rem);
+      color: red;
+    }
+  }
+
+  .left-sort {
+    select {
+      @include filter-select(5.7rem);
+      color: inherit;
+    }
+  }
+
+  // SHITA PART
+
+  .shita-container {
+    padding: .8rem;
+    @include margin-top(.7rem);
+    @include breakpoint(xs) {
+      h3 {
+        margin: -20px 0 10px 0;
+      }
+    }
+    @media (max-width: 530px) {
+      @include pad-left(5px);
+      @include pad-right(2px);
+    }
+  }
+
+  .shita {
+    padding: 2.5rem 1rem;
+    @include border(2px, solid, $main-border-color);
+    @media (max-width: 510px) {
+      padding: 2.5rem .5rem;
+    }
+    @media (max-width: 450px) {
+      img {
+        width: 80px;
+      }
+    }
+  }
+
+  .shita-content {
+    max-width: 420/780 * 100%;
+    p {
+      @include pad-top();
+    }
+  }
+
+  .location-and-rating {
+    @include margin-top();
+  }
+
+  .location {
+    span {
+      @include pad-right(.2rem);
+    }
+    @include breakpoint(xs) {
+      @include txt-align(center);
+    }
+  }
+
+  h3, .price, .shekel {
+    line-height: 20px;
+    color: #33455d;
+    font-weight: 100;
+  }
+
+  .purchase {
+    @include pad-right(1.1rem);
+    @include pad-top(1rem);
+    @include margin-top(-1rem);
+    div {
+      @include margin-bottom();
+    }
+    button {
+      @include bgc($main-cart-bgc);
+      color: #fff;
+      border-radius: 2rem;
+      padding: .5rem 1.5rem;
+      cursor: pointer;
+      height: fit-content;
+    }
+    @include breakpoint(xs) {
+      padding-right: 1.2rem;
+      border: none;
+      button {
+        padding: .5rem 3rem;
+      }
+    }
+    @media (max-width: 630px) {
+      button {
+        padding: .5rem 1.5rem;
+      }
+    }
+    @media (max-width: 600px) {
+      button {
+        padding: .5rem .8rem;
+      }
+    }
+  }
+
+  .price {
+    font-size: 2rem;
+  }
+
+  .shekel {
+    font-size: 1.2rem;
+  }
+
+  .xs-price {
+    height: 60px;
+    padding: 10px 35px 0 0;
+    @media (max-width: 540px) {
+      padding-right: 20px;
+    }
+    @media (max-width: 500px) {
+      padding-right: 8px;
+    }
+  }
+
+  .xs-rating {
+    @include pad-left(1.1rem);
+    @media (max-width: 500px) {
+      padding-left: 8px;
+    }
+  }
+
+  .paging {
+    @include txt-align(left);
+    margin: 2.5rem 0 15rem 2.5rem;
+    direction: ltr;
+    span {
+      cursor: pointer;
+      @include pad-right(2rem);
+      font-size: 1.7rem;
+      line-height: 18px;
+    }
+  }
+
+}
+
+

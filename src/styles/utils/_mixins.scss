@@ -1,0 +1,107 @@
+@import "../base/variables";
+
+@mixin bgc($val: null) {
+  background-color: $val;
+}
+
+@mixin disp($val: null) {
+  display: $val;
+}
+
+@mixin flex-align-items($val: center) {
+  align-items: $val;
+}
+
+@mixin flex-just-cont($val: space-between) {
+  justify-content: $val;
+}
+
+@mixin border($width, $style, $color) {
+  border: $width, $style, $color;
+}
+
+@mixin border-right($width, $style, $color) {
+  border-right: $width, $style, $color;
+}
+
+@mixin border-top($width, $style, $color) {
+  border-top: $width, $style, $color;
+}
+
+@mixin border-bottom($width, $style, $color) {
+  border-bottom: $width, $style, $color;
+}
+
+@mixin border-left($width, $style, $color) {
+  border-left: $width, $style, $color;
+}
+
+@mixin background($url, $repeat: no-repeat, $x: 0, $y: 0) {
+  background: url($url) $repeat $x, $y;
+}
+
+@mixin pad-right($val: 0.5rem) {
+  padding-right: $val;
+}
+
+@mixin pad-left($val: 0.5rem) {
+  padding-left: $val;
+}
+
+@mixin pad-top($val: 0.5rem) {
+  padding-top: $val;
+}
+
+@mixin pad-bottom($val: 0.5rem) {
+  padding-bottom: $val;
+}
+
+@mixin margin-left($val: 0.5rem) {
+  margin-left: $val;
+}
+
+@mixin margin-top($val: 0.5rem) {
+  margin-top: $val;
+}
+
+@mixin margin-bottom($val: 0.5rem) {
+  margin-bottom: $val;
+}
+
+@mixin margin-right($val: 0.5rem) {
+  margin-right: $val;
+}
+
+@mixin filter-select($w: 100%) {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: $w;
+  cursor: pointer;
+}
+
+@mixin icon-select($rel-path: "arrow", $x-offset: 7px) {
+  $path: "/src/images/sprites/icons/" + $rel-path + ".png";
+  @include background($path, no-repeat, $x-offset);
+}
+
+@mixin margin-center() {
+  margin: 0 auto;
+}
+
+@mixin txt-align($val: right) {
+  text-align: $val;
+}
+
+@mixin breakpoint($point) {
+  @if $point == xs {
+    @media (max-width: 840px) {@content;}
+  }
+
+  @else if $point == md {
+    @media (max-width: 900px) {@content;}
+  }
+
+  @else if $point == lg {
+    @media (max-width: 1320px) {@content;}
+  }
+}

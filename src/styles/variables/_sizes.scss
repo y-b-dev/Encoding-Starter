@@ -1,0 +1,36 @@
+//Page
+$page-height: 2683px + 68px;
+$page-width: 1920px;
+$wrapper-width: 1101px;
+
+//Header
+$header-height: 359px;
+$nav-height: 34px;
+$nav-offset-from-top: 14px;
+$header-content-width: 656px;
+
+//Main
+$difference-between-header-and-main: 318px;
+$main-top-box-height: 65px;
+$main-height-between-boxes: 13px;
+$main-ontent-boxes-width: 780px;
+$main-agents-found-box-height: 56px;
+$main-sort-by-box-height: 44px;
+$main-shita-width: 180px;
+$main-shita-height: 110px;
+$aside-width: 307px;
+$aside-filter-boxes-width: 268px;
+$aside-filter-boxes-height: 34px;
+$aside-yes-no-box: 38px;
+
+//Footer
+$footer-width: 1138px;
+$footer-height: $page-height - 2465px;
+$footer-lower-height: 45px;
+$footer-upper-height: $footer-height - $footer-lower-height;
+$footer-compie-container-width: 278px;
+$footer-compie-paragraph-width: 236px;
+$footer-stay-updated-container-width: 315px;
+$footer-stay-updated-pad-r-width: 35px;
+
+

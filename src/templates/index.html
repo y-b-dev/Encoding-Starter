@@ -1,0 +1,1122 @@
+<header class="disp-flex">
+
+    <nav class="clearfix">
+        <div class="nav-box margin-right-1">
+            <label for="toggle-nav"></label>
+        </div>
+        <div class="header-compie-trusty pad-compie width-fit-content bold margin-left-1">
+            .trusty
+        </div>
+        <input type="checkbox" id="toggle-nav">
+        <div class="menu center-box txt-align-center">
+            <ul>
+                <li><a href="#">חמדגחמדגחדגמ</a></li>
+                <li><a href="#">דדבגד</a></li>
+                <li><a href="#">חגדגדג</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="bgc-wrapper left-curly-border flex-auto hide-xs"></div>
+    <div class="bgc-wrapper disp-flex flex-dir-col full-width">
+        <div class="header-top disp-flex flex-align-items-center flex-just-cont-between primary-wrapper bold center-box hide-xs">
+            <div class="search-box disp-flex flex-align-items-center width-fit-content">
+                <span class="header-compie-trusty pad-compie">Compie</span>
+                <img class="margin-left-1 margin-right-1" src="/src/images/sprites/icons/B_Dira.png" alt="Compie">
+                <select class="bold margin-left-1 no-border" name="sel-insurance">
+                    <option value="">ביטוח דירה</option>
+                </select>
+                <a class="border-r pad-right-1" role="button" href="">
+                    <img src="/src/images/sprites/icons/search.png" alt="Search">
+                </a>
+            </div>
+            <div class="user-box disp-flex flex-align-items-center width-fit-content">
+                <a class="margin-left-1" href="">
+                    <img src="/src/images/sprites/icons/black-mail.png" alt="Mail">
+                </a>
+                <a href="" class="border-r">
+                    <img src="/src/images/sprites/icons/user.png" alt="Login" class="border-right-black-1 pad-right-1">
+                </a>
+            </div>
+        </div>
+        <div class="header-content center-box txt-align-center primary-wrapper bold">
+            <div>
+                <h1>
+                    ביטוח
+                    <img class="pad-right-1 pad-left-1" src="/src/images/sprites/icons/Car_000000_100.png" alt="Car">
+                    רכב
+                </h1>
+                <p class="hide-xs">
+                    על מנת שתוכל לנסוע על הכביש בלי דאגות תן לנו להתאים עבורך את הפוליסה
+                    הטובה ביותר עם כיסויים מקיפים במחירים מנצחים ממגוון סוכני הביטוח
+                    ושתהיה לכם נסיעה טובה.
+                </p>
+                <button type="button" id="modalBtn" class="show-xs bold no-border">
+                    אשף המחיר
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="bgc-wrapper right-curly-border flex-auto hide-xs"></div>
+
+    <div class="full-width" id="modal">
+        <div id="modal-content" class="modal-content txt-align-center">
+            <span id="close" class="close">&times;</span>
+            <button class="getOffers no-border bold full-width">
+                קבל הצעות
+            </button>
+        </div>
+    </div>
+
+</header>
+
+<main class="primary-wrapper center-box">
+
+    <!--    TOP PART           -->
+
+    <div class="top-part disp-flex flex-just-cont-even flex-wrap hide-xs">
+        <div class="disp-flex just-space-between flex-align-items-center">
+            <img class="top-part-icon" src="/src/images/sprites/icons/report.png" alt="Fill">
+            <p class="num-font-size bold">
+                1
+            </p>
+            <p class="par-fill">
+                ממלאים פרטים
+                להצעות ביטוח
+            </p>
+            <div class="left-arrow">
+                <img src="/src/images/sprites/icons/left-arrow.png" alt="">
+            </div>
+        </div>
+        <div class="disp-flex just-space-between flex-align-items-center">
+            <img class="top-part-icon" src="/src/images/sprites/icons/coins.png" alt="Coins">
+            <p class="num-font-size bold margin-left-1">
+                2
+            </p>
+            <p class="par-offers">
+                מקבלים מגוון הצעות
+                משתלמות מסוכני ביטוח
+            </p>
+            <div class="left-arrow">
+                <img src="/src/images/sprites/icons/left-arrow.png" alt="">
+            </div>
+        </div>
+        <div class="disp-flex just-space-between flex-align-items-center">
+            <img class="top-part-icon" src="/src/images/sprites/icons/bussines-man.png" alt="Agent">
+            <p class="num-font-size bold margin-left-1">
+                3
+            </p>
+            <p class="par-agent">
+                בוחרים סוכן ביטוח
+                הטוב ביותר
+            </p>
+            <div class="left-arrow">
+                <img src="/src/images/sprites/icons/left-arrow.png" alt="">
+            </div>
+        </div>
+        <div class="disp-flex just-space-between flex-align-items-center">
+            <img class="top-part-icon" src="/src/images/sprites/icons/click.png" alt="Click">
+            <p class="num-font-size bold margin-left-1">
+                4
+            </p>
+            <p class="par-policy">
+                רוכשים פוליסה
+                בקליק
+            </p>
+        </div>
+    </div>
+
+    <!--       CENTERT PART-       -->
+
+    <div class="main-content-wrapper disp-flex">
+
+        <!--        SIDE CONTENT              -->
+
+        <div id="side-insert-target" class="side-content hide-xs">
+            <div id="side-content">
+                <h2 class="border-bottom-main-1">
+                    אשף המחיר
+                </h2>
+                <div class="details-for-filtering">
+                    <p class="border-bottom-main-1">
+                        לקבלת הצעת מחיר מותאמת אישית אנא הזן את הפרטים הבאים
+                    </p>
+                    <select class="filter-select down-arrow-select white-bordered-box" name="insurance-type">
+                        <option value="">בחר את סוג הביטוח</option>
+                    </select>
+                    <select class="filter-select calendar-select white-bordered-box" name="insurance-type">
+                        <option value="">תאריך תחילת הביטוח</option>
+                    </select>
+                    <select class="filter-select plus-select white-bordered-box" name="insurance-type">
+                        <option value="">בחר את סוג הרכב</option>
+                    </select>
+                    <select class="filter-select plus-select white-bordered-box" name="insurance-type">
+                        <option value="">מי ינהג ברכב?</option>
+                    </select>
+                    <select class="filter-select down-arrow-select white-bordered-box" name="insurance-type">
+                        <option value="">מטרת השימוש ברכב</option>
+                    </select>
+                    <select class="filter-select down-arrow-select white-bordered-box border-bottom-main-1" name="insurance-type">
+                        <option value="">היכן אתה גר?</option>
+                    </select>
+
+                    <!-- YES NO QUESTIONS -->
+
+                    <div id="yes-no-container" class="yes-no-container disp-flex flex-align-items-center flex-just-cont-between border-top-main-1 border-bottom-main-1">
+                        <p class="question">
+                            האם היה לך ביטוח מקיף או רכב ליסינג ב-3 שנים האחרונות?
+                        </p>
+                        <div class="yes-no disp-flex flex-just-cont-between">
+                            <label class="white-bordered-box" for="yes6">כן
+                                <input type="radio" name="bin6" value="yes" id="yes6">
+                                <span></span>
+                            </label>
+                            <label class="white-bordered-box" for="no6">לא
+                                <input type="radio" name="bin6" value="no" id="no6">
+                                <span></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="yes-no-container disp-flex flex-align-items-center flex-just-cont-between border-bottom-main-1">
+                        <p class="question">
+                            האם היו לך תביעות רכוש ו/או גוף ב-3 שנים האחרונות?
+                        </p>
+                        <div class="yes-no disp-flex">
+                            <label class="white-bordered-box" for="yes7">כן
+                                <input type="radio" name="bin7" value="yes" id="yes7">
+                                <span></span>
+                            </label>
+                            <label class="white-bordered-box" for="no7">לא
+                                <input type="radio" name="bin7" value="no" id="no7">
+                                <span></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="yes-no-container disp-flex flex-align-items-center flex-just-cont-between border-bottom-main-1">
+                        <p class="question">
+                            האם לבן הזוג שלך יש רכב נוסף?
+                        </p>
+                        <div class="yes-no disp-flex">
+                            <label class="white-bordered-box" for="yes8">כן
+                                <input type="radio" name="bin8" value="yes" id="yes8">
+                                <span></span>
+                            </label>
+                            <label class="white-bordered-box" for="no8">לא
+                                <input type="radio" name="bin8" value="no" id="no8">
+                                <span></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="yes-no-container disp-flex flex-align-items-center flex-just-cont-between border-bottom-main-1">
+                        <p class="question">
+                            האם יש לך עבר פלילי?
+                        </p>
+                        <div class="yes-no disp-flex">
+                            <label class="white-bordered-box" for="yes4">כן
+                                <input type="radio" name="bin4" value="yes" id="yes4">
+                                <span></span>
+                            </label>
+                            <label class="white-bordered-box" for="no4">לא
+                                <input type="radio" name="bin4" value="no" id="no4">
+                                <span></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="yes-no-container disp-flex flex-align-items-center flex-just-cont-between border-bottom-main-1">
+                        <p class="question">
+                            האם שללו לך את הרישיון בעבר?
+                        </p>
+                        <div class="yes-no disp-flex">
+                            <label class="white-bordered-box" for="yes5">כן
+                                <input type="radio" name="bin5" value="yes" id="yes5">
+                                <span></span>
+                            </label>
+                            <label class="white-bordered-box" for="no5">לא
+                                <input type="radio" name="bin5" value="no" id="no5">
+                                <span></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="/src/images/sprites/icons/banner.png" alt="Banner" class="banner full-width">
+        </div>
+
+        <!--      MAIN CONTENT        -->
+
+        <!--    AGENTS FOUND    -->
+
+        <div class="main-content border-top-main-1">
+
+            <div class="agents-found border-bottom-main-1 border-right-main-1">
+                <h2 class="pad-right-1">
+                    נמצאו 3508 סוכני ביטוח
+                </h2>
+            </div>
+
+            <!--    SORT BY      -->
+
+            <div class="sort-by disp-flex flex-align-items-center flex-just-cont-between flex-wrap white-bordered-box">
+
+                <select class="right-sort-xs down-arrow-select show-xs">
+                    <option value="">
+                        <span style="font-weight:bold">מיין לפי:</span>
+                        <span class="red-text">מחיר גבוה לנמוך</span>
+                    </option>
+                </select>
+                <select class="left-sort-xs down-arrow-select show-xs">
+                    <option value="">סינון לפי איזור:כל האיזורים</option>
+                </select>
+
+                <div id="right-sort" class="right-sort hide-xs">
+                    <span class="bold pad-left-1">מיין לפי:</span>
+                    <select id="left-sort-right" class="no-border" name="price-order">
+                        <option value="">מחיר גבוה לנמוך</option>
+                    </select>
+                    <span role="button" class="border-right-main-1 pad-right-1 pad-left-1">
+                        דירוג סוכן
+                    </span>
+                    <span role="button" class="border-right-main-1 pad-right-1">
+                        מס' מדרגים
+                    </span>
+                </div>
+                <div class="left-sort hide-xs">
+                    <label class="border-right-main-1 pad-right-1">סינון לפי איזור:</label>
+                    <select class="no-border" name="area-filter">
+                        <option value="">כל האיזורים</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <!--    SHITA PART  -->
+
+            <div class="shita-container disp-flex flex-just-cont-even flex-align-items-center white-bordered-box">
+
+                <div class="shita margin-left-1">
+                    <img src="/src/images/sprites/icons/shita.png" alt="Shita">
+                </div>
+
+                <div class="shita-content disp-flex flex-dir-col margin-left-1 hide-xs">
+                    <h3>אלמוג יצחקי סוכנות אלמוגים</h3>
+                    <p>
+                        "ריף אלמוגים" הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה.
+                    </p>
+                    <div class="location-and-rating disp-flex flex-just-cont-between flex-align-items-center">
+                        <div class="location">
+                            <img src="/src/images/sprites/icons/location.png" alt="Location">
+                            <span>פתח תקווה</span>
+                        </div>
+                        <div class="rating width-fit-content">
+                            <img src="/src/images/sprites/icons/star-unmarked.png" alt="Grey star">
+                            <img src="/src/images/sprites/icons/star-unmarked.png" alt="Grey star">
+                            <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                            <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                            <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="disp-flex flex-dir-col show-xs">
+                    <h3>אלמוג יצחקי סוכנות אלמוגים</h3>
+                    <div class="disp-flex flex-dir-row flex-align-items-center">
+                        <div class="xs-rating disp-flex flex-dir-col">
+                            <div class="rating width-fit-content">
+                                <img src="/src/images/sprites/icons/star-unmarked.png" alt="Grey star">
+                                <img src="/src/images/sprites/icons/star-unmarked.png" alt="Grey star">
+                                <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                                <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                                <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                            </div>
+                            <div class="location">
+                                <img src="/src/images/sprites/icons/location.png" alt="Location">
+                                <span>פתח תקווה</span>
+                            </div>
+                        </div>
+                        <div class="xs-price disp-flex flex-dir-col border-right-main-1">
+                            <div>
+                                <span class="price">483</span>
+                                <span class="shekel">&#8362</span>
+                            </div>
+                            <p>
+                                פרמיה חודשית
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="purchase disp-flex flex-dir-col border-right-main-1">
+                    <div class="hide-xs">
+                        <span class="price">483</span>
+                        <span class="shekel">&#8362</span>
+                        <p>
+                            פרמיה חודשית
+                        </p>
+                    </div>
+                    <button class="no-border width-fit-content">
+                        <img src="/src/images/sprites/icons/Shopping Cart Loaded_000000_75.png" alt="Shopping Cart">
+                        <span class="bold hide-xs">לרכישה</span>
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="shita-container disp-flex flex-just-cont-even flex-align-items-center white-bordered-box">
+
+                <div class="shita margin-left-1">
+                    <img src="/src/images/sprites/icons/shita.png" alt="Shita">
+                </div>
+
+                <div class="shita-content disp-flex flex-dir-col margin-left-1 hide-xs">
+                    <h3>אלמוג יצחקי סוכנות אלמוגים</h3>
+                    <p>
+                        "ריף אלמוגים" הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה.
+                    </p>
+                    <div class="location-and-rating disp-flex flex-just-cont-between flex-align-items-center">
+                        <div class="location">
+                            <img src="/src/images/sprites/icons/location.png" alt="Location">
+                            <span>פתח תקווה</span>
+                        </div>
+                        <div class="rating width-fit-content">
+                            <img src="/src/images/sprites/icons/star-unmarked.png" alt="Grey star">
+                            <img src="/src/images/sprites/icons/star-unmarked.png" alt="Grey star">
+                            <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                            <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                            <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="disp-flex flex-dir-col show-xs">
+                    <h3>אלמוג יצחקי סוכנות אלמוגים</h3>
+                    <div class="disp-flex flex-dir-row flex-align-items-center">
+                        <div class="xs-rating disp-flex flex-dir-col">
+                            <div class="rating width-fit-content">
+                                <img src="/src/images/sprites/icons/star-unmarked.png" alt="Grey star">
+                                <img src="/src/images/sprites/icons/star-unmarked.png" alt="Grey star">
+                                <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                                <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                                <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                            </div>
+                            <div class="location">
+                                <img src="/src/images/sprites/icons/location.png" alt="Location">
+                                <span>פתח תקווה</span>
+                            </div>
+                        </div>
+                        <div class="xs-price disp-flex flex-dir-col border-right-main-1">
+                            <div>
+                                <span class="price">483</span>
+                                <span class="shekel">&#8362</span>
+                            </div>
+                            <p>
+                                פרמיה חודשית
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="purchase disp-flex flex-dir-col border-right-main-1">
+                    <div class="hide-xs">
+                        <span class="price">483</span>
+                        <span class="shekel">&#8362</span>
+                        <p>
+                            פרמיה חודשית
+                        </p>
+                    </div>
+                    <button class="no-border width-fit-content">
+                        <img src="/src/images/sprites/icons/Shopping Cart Loaded_000000_75.png" alt="Shopping Cart">
+                        <span class="bold hide-xs">לרכישה</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="shita-container disp-flex flex-just-cont-even flex-align-items-center white-bordered-box">
+
+                <div class="shita margin-left-1">
+                    <img src="/src/images/sprites/icons/shita.png" alt="Shita">
+                </div>
+
+                <div class="shita-content disp-flex flex-dir-col margin-left-1 hide-xs">
+                    <h3>אלמוג יצחקי סוכנות אלמוגים</h3>
+                    <p>
+                        "ריף אלמוגים" הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה.
+                    </p>
+                    <div class="location-and-rating disp-flex flex-just-cont-between flex-align-items-center">
+                        <div class="location">
+                            <img src="/src/images/sprites/icons/location.png" alt="Location">
+                            <span>פתח תקווה</span>
+                        </div>
+                        <div class="rating width-fit-content">
+                            <img src="/src/images/sprites/icons/star-unmarked.png" alt="Grey star">
+                            <img src="/src/images/sprites/icons/star-unmarked.png" alt="Grey star">
+                            <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                            <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                            <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="disp-flex flex-dir-col show-xs">
+                    <h3>אלמוג יצחקי סוכנות אלמוגים</h3>
+                    <div class="disp-flex flex-dir-row flex-align-items-center">
+                        <div class="xs-rating disp-flex flex-dir-col">
+                            <div class="rating width-fit-content">
+                                <img src="/src/images/sprites/icons/star-unmarked.png" alt="Grey star">
+                                <img src="/src/images/sprites/icons/star-unmarked.png" alt="Grey star">
+                                <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                                <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                                <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                            </div>
+                            <div class="location">
+                                <img src="/src/images/sprites/icons/location.png" alt="Location">
+                                <span>פתח תקווה</span>
+                            </div>
+                        </div>
+                        <div class="xs-price disp-flex flex-dir-col border-right-main-1">
+                            <div>
+                                <span class="price">483</span>
+                                <span class="shekel">&#8362</span>
+                            </div>
+                            <p>
+                                פרמיה חודשית
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="purchase disp-flex flex-dir-col border-right-main-1">
+                    <div class="hide-xs">
+                        <span class="price">483</span>
+                        <span class="shekel">&#8362</span>
+                        <p>
+                            פרמיה חודשית
+                        </p>
+                    </div>
+                    <button class="no-border width-fit-content">
+                        <img src="/src/images/sprites/icons/Shopping Cart Loaded_000000_75.png" alt="Shopping Cart">
+                        <span class="bold hide-xs">לרכישה</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="shita-container disp-flex flex-just-cont-even flex-align-items-center white-bordered-box">
+
+                <div class="shita margin-left-1">
+                    <img src="/src/images/sprites/icons/shita.png" alt="Shita">
+                </div>
+
+                <div class="shita-content disp-flex flex-dir-col margin-left-1 hide-xs">
+                    <h3>אלמוג יצחקי סוכנות אלמוגים</h3>
+                    <p>
+                        "ריף אלמוגים" הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה.
+                    </p>
+                    <div class="location-and-rating disp-flex flex-just-cont-between flex-align-items-center">
+                        <div class="location">
+                            <img src="/src/images/sprites/icons/location.png" alt="Location">
+                            <span>פתח תקווה</span>
+                        </div>
+                        <div class="rating width-fit-content">
+                            <img src="/src/images/sprites/icons/star-unmarked.png" alt="Grey star">
+                            <img src="/src/images/sprites/icons/star-unmarked.png" alt="Grey star">
+                            <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                            <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                            <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="disp-flex flex-dir-col show-xs">
+                    <h3>אלמוג יצחקי סוכנות אלמוגים</h3>
+                    <div class="disp-flex flex-dir-row flex-align-items-center">
+                        <div class="xs-rating disp-flex flex-dir-col">
+                            <div class="rating width-fit-content">
+                                <img src="/src/images/sprites/icons/star-unmarked.png" alt="Grey star">
+                                <img src="/src/images/sprites/icons/star-unmarked.png" alt="Grey star">
+                                <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                                <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                                <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                            </div>
+                            <div class="location">
+                                <img src="/src/images/sprites/icons/location.png" alt="Location">
+                                <span>פתח תקווה</span>
+                            </div>
+                        </div>
+                        <div class="xs-price disp-flex flex-dir-col border-right-main-1">
+                            <div>
+                                <span class="price">483</span>
+                                <span class="shekel">&#8362</span>
+                            </div>
+                            <p>
+                                פרמיה חודשית
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="purchase disp-flex flex-dir-col border-right-main-1">
+                    <div class="hide-xs">
+                        <span class="price">483</span>
+                        <span class="shekel">&#8362</span>
+                        <p>
+                            פרמיה חודשית
+                        </p>
+                    </div>
+                    <button class="no-border width-fit-content">
+                        <img src="/src/images/sprites/icons/Shopping Cart Loaded_000000_75.png" alt="Shopping Cart">
+                        <span class="bold hide-xs">לרכישה</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="shita-container disp-flex flex-just-cont-even flex-align-items-center white-bordered-box">
+
+                <div class="shita margin-left-1">
+                    <img src="/src/images/sprites/icons/shita.png" alt="Shita">
+                </div>
+
+                <div class="shita-content disp-flex flex-dir-col margin-left-1 hide-xs">
+                    <h3>אלמוג יצחקי סוכנות אלמוגים</h3>
+                    <p>
+                        "ריף אלמוגים" הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה.
+                    </p>
+                    <div class="location-and-rating disp-flex flex-just-cont-between flex-align-items-center">
+                        <div class="location">
+                            <img src="/src/images/sprites/icons/location.png" alt="Location">
+                            <span>פתח תקווה</span>
+                        </div>
+                        <div class="rating width-fit-content">
+                            <img src="/src/images/sprites/icons/star-unmarked.png" alt="Grey star">
+                            <img src="/src/images/sprites/icons/star-unmarked.png" alt="Grey star">
+                            <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                            <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                            <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="disp-flex flex-dir-col show-xs">
+                    <h3>אלמוג יצחקי סוכנות אלמוגים</h3>
+                    <div class="disp-flex flex-dir-row flex-align-items-center">
+                        <div class="xs-rating disp-flex flex-dir-col">
+                            <div class="rating width-fit-content">
+                                <img src="/src/images/sprites/icons/star-unmarked.png" alt="Grey star">
+                                <img src="/src/images/sprites/icons/star-unmarked.png" alt="Grey star">
+                                <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                                <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                                <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                            </div>
+                            <div class="location">
+                                <img src="/src/images/sprites/icons/location.png" alt="Location">
+                                <span>פתח תקווה</span>
+                            </div>
+                        </div>
+                        <div class="xs-price disp-flex flex-dir-col border-right-main-1">
+                            <div>
+                                <span class="price">483</span>
+                                <span class="shekel">&#8362</span>
+                            </div>
+                            <p>
+                                פרמיה חודשית
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="purchase disp-flex flex-dir-col border-right-main-1">
+                    <div class="hide-xs">
+                        <span class="price">483</span>
+                        <span class="shekel">&#8362</span>
+                        <p>
+                            פרמיה חודשית
+                        </p>
+                    </div>
+                    <button class="no-border width-fit-content">
+                        <img src="/src/images/sprites/icons/Shopping Cart Loaded_000000_75.png" alt="Shopping Cart">
+                        <span class="bold hide-xs">לרכישה</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="shita-container disp-flex flex-just-cont-even flex-align-items-center white-bordered-box">
+
+                <div class="shita margin-left-1">
+                    <img src="/src/images/sprites/icons/shita.png" alt="Shita">
+                </div>
+
+                <div class="shita-content disp-flex flex-dir-col margin-left-1 hide-xs">
+                    <h3>אלמוג יצחקי סוכנות אלמוגים</h3>
+                    <p>
+                        "ריף אלמוגים" הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה.
+                    </p>
+                    <div class="location-and-rating disp-flex flex-just-cont-between flex-align-items-center">
+                        <div class="location">
+                            <img src="/src/images/sprites/icons/location.png" alt="Location">
+                            <span>פתח תקווה</span>
+                        </div>
+                        <div class="rating width-fit-content">
+                            <img src="/src/images/sprites/icons/star-unmarked.png" alt="Grey star">
+                            <img src="/src/images/sprites/icons/star-unmarked.png" alt="Grey star">
+                            <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                            <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                            <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="disp-flex flex-dir-col show-xs">
+                    <h3>אלמוג יצחקי סוכנות אלמוגים</h3>
+                    <div class="disp-flex flex-dir-row flex-align-items-center">
+                        <div class="xs-rating disp-flex flex-dir-col">
+                            <div class="rating width-fit-content">
+                                <img src="/src/images/sprites/icons/star-unmarked.png" alt="Grey star">
+                                <img src="/src/images/sprites/icons/star-unmarked.png" alt="Grey star">
+                                <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                                <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                                <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                            </div>
+                            <div class="location">
+                                <img src="/src/images/sprites/icons/location.png" alt="Location">
+                                <span>פתח תקווה</span>
+                            </div>
+                        </div>
+                        <div class="xs-price disp-flex flex-dir-col border-right-main-1">
+                            <div>
+                                <span class="price">483</span>
+                                <span class="shekel">&#8362</span>
+                            </div>
+                            <p>
+                                פרמיה חודשית
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="purchase disp-flex flex-dir-col border-right-main-1">
+                    <div class="hide-xs">
+                        <span class="price">483</span>
+                        <span class="shekel">&#8362</span>
+                        <p>
+                            פרמיה חודשית
+                        </p>
+                    </div>
+                    <button class="no-border width-fit-content">
+                        <img src="/src/images/sprites/icons/Shopping Cart Loaded_000000_75.png" alt="Shopping Cart">
+                        <span class="bold hide-xs">לרכישה</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="shita-container disp-flex flex-just-cont-even flex-align-items-center white-bordered-box">
+
+                <div class="shita margin-left-1">
+                    <img src="/src/images/sprites/icons/shita.png" alt="Shita">
+                </div>
+
+                <div class="shita-content disp-flex flex-dir-col margin-left-1 hide-xs">
+                    <h3>אלמוג יצחקי סוכנות אלמוגים</h3>
+                    <p>
+                        "ריף אלמוגים" הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה.
+                    </p>
+                    <div class="location-and-rating disp-flex flex-just-cont-between flex-align-items-center">
+                        <div class="location">
+                            <img src="/src/images/sprites/icons/location.png" alt="Location">
+                            <span>פתח תקווה</span>
+                        </div>
+                        <div class="rating width-fit-content">
+                            <img src="/src/images/sprites/icons/star-unmarked.png" alt="Grey star">
+                            <img src="/src/images/sprites/icons/star-unmarked.png" alt="Grey star">
+                            <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                            <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                            <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="disp-flex flex-dir-col show-xs">
+                    <h3>אלמוג יצחקי סוכנות אלמוגים</h3>
+                    <div class="disp-flex flex-dir-row flex-align-items-center">
+                        <div class="xs-rating disp-flex flex-dir-col">
+                            <div class="rating width-fit-content">
+                                <img src="/src/images/sprites/icons/star-unmarked.png" alt="Grey star">
+                                <img src="/src/images/sprites/icons/star-unmarked.png" alt="Grey star">
+                                <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                                <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                                <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                            </div>
+                            <div class="location">
+                                <img src="/src/images/sprites/icons/location.png" alt="Location">
+                                <span>פתח תקווה</span>
+                            </div>
+                        </div>
+                        <div class="xs-price disp-flex flex-dir-col border-right-main-1">
+                            <div>
+                                <span class="price">483</span>
+                                <span class="shekel">&#8362</span>
+                            </div>
+                            <p>
+                                פרמיה חודשית
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="purchase disp-flex flex-dir-col border-right-main-1">
+                    <div class="hide-xs">
+                        <span class="price">483</span>
+                        <span class="shekel">&#8362</span>
+                        <p>
+                            פרמיה חודשית
+                        </p>
+                    </div>
+                    <button class="no-border width-fit-content">
+                        <img src="/src/images/sprites/icons/Shopping Cart Loaded_000000_75.png" alt="Shopping Cart">
+                        <span class="bold hide-xs">לרכישה</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="shita-container disp-flex flex-just-cont-even flex-align-items-center white-bordered-box">
+
+                <div class="shita margin-left-1">
+                    <img src="/src/images/sprites/icons/shita.png" alt="Shita">
+                </div>
+
+                <div class="shita-content disp-flex flex-dir-col margin-left-1 hide-xs">
+                    <h3>אלמוג יצחקי סוכנות אלמוגים</h3>
+                    <p>
+                        "ריף אלמוגים" הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה.
+                    </p>
+                    <div class="location-and-rating disp-flex flex-just-cont-between flex-align-items-center">
+                        <div class="location">
+                            <img src="/src/images/sprites/icons/location.png" alt="Location">
+                            <span>פתח תקווה</span>
+                        </div>
+                        <div class="rating width-fit-content">
+                            <img src="/src/images/sprites/icons/star-unmarked.png" alt="Grey star">
+                            <img src="/src/images/sprites/icons/star-unmarked.png" alt="Grey star">
+                            <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                            <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                            <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="disp-flex flex-dir-col show-xs">
+                    <h3>אלמוג יצחקי סוכנות אלמוגים</h3>
+                    <div class="disp-flex flex-dir-row flex-align-items-center">
+                        <div class="xs-rating disp-flex flex-dir-col">
+                            <div class="rating width-fit-content">
+                                <img src="/src/images/sprites/icons/star-unmarked.png" alt="Grey star">
+                                <img src="/src/images/sprites/icons/star-unmarked.png" alt="Grey star">
+                                <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                                <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                                <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                            </div>
+                            <div class="location">
+                                <img src="/src/images/sprites/icons/location.png" alt="Location">
+                                <span>פתח תקווה</span>
+                            </div>
+                        </div>
+                        <div class="xs-price disp-flex flex-dir-col border-right-main-1">
+                            <div>
+                                <span class="price">483</span>
+                                <span class="shekel">&#8362</span>
+                            </div>
+                            <p>
+                                פרמיה חודשית
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="purchase disp-flex flex-dir-col border-right-main-1">
+                    <div class="hide-xs">
+                        <span class="price">483</span>
+                        <span class="shekel">&#8362</span>
+                        <p>
+                            פרמיה חודשית
+                        </p>
+                    </div>
+                    <button class="no-border width-fit-content">
+                        <img src="/src/images/sprites/icons/Shopping Cart Loaded_000000_75.png" alt="Shopping Cart">
+                        <span class="bold hide-xs">לרכישה</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="shita-container disp-flex flex-just-cont-even flex-align-items-center white-bordered-box">
+
+                <div class="shita margin-left-1">
+                    <img src="/src/images/sprites/icons/shita.png" alt="Shita">
+                </div>
+
+                <div class="shita-content disp-flex flex-dir-col margin-left-1 hide-xs">
+                    <h3>אלמוג יצחקי סוכנות אלמוגים</h3>
+                    <p>
+                        "ריף אלמוגים" הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה.
+                    </p>
+                    <div class="location-and-rating disp-flex flex-just-cont-between flex-align-items-center">
+                        <div class="location">
+                            <img src="/src/images/sprites/icons/location.png" alt="Location">
+                            <span>פתח תקווה</span>
+                        </div>
+                        <div class="rating width-fit-content">
+                            <img src="/src/images/sprites/icons/star-unmarked.png" alt="Grey star">
+                            <img src="/src/images/sprites/icons/star-unmarked.png" alt="Grey star">
+                            <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                            <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                            <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="disp-flex flex-dir-col show-xs">
+                    <h3>אלמוג יצחקי סוכנות אלמוגים</h3>
+                    <div class="disp-flex flex-dir-row flex-align-items-center">
+                        <div class="xs-rating disp-flex flex-dir-col">
+                            <div class="rating width-fit-content">
+                                <img src="/src/images/sprites/icons/star-unmarked.png" alt="Grey star">
+                                <img src="/src/images/sprites/icons/star-unmarked.png" alt="Grey star">
+                                <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                                <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                                <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                            </div>
+                            <div class="location">
+                                <img src="/src/images/sprites/icons/location.png" alt="Location">
+                                <span>פתח תקווה</span>
+                            </div>
+                        </div>
+                        <div class="xs-price disp-flex flex-dir-col border-right-main-1">
+                            <div>
+                                <span class="price">483</span>
+                                <span class="shekel">&#8362</span>
+                            </div>
+                            <p>
+                                פרמיה חודשית
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="purchase disp-flex flex-dir-col border-right-main-1">
+                    <div class="hide-xs">
+                        <span class="price">483</span>
+                        <span class="shekel">&#8362</span>
+                        <p>
+                            פרמיה חודשית
+                        </p>
+                    </div>
+                    <button class="no-border width-fit-content">
+                        <img src="/src/images/sprites/icons/Shopping Cart Loaded_000000_75.png" alt="Shopping Cart">
+                        <span class="bold hide-xs">לרכישה</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="shita-container disp-flex flex-just-cont-even flex-align-items-center white-bordered-box">
+
+                <div class="shita margin-left-1">
+                    <img src="/src/images/sprites/icons/shita.png" alt="Shita">
+                </div>
+
+                <div class="shita-content disp-flex flex-dir-col margin-left-1 hide-xs">
+                    <h3>אלמוג יצחקי סוכנות אלמוגים</h3>
+                    <p>
+                        "ריף אלמוגים" הינה חברה בבעלות פרטית הפועלת למען לקוחותיה במישור הכספי בכל טווחי ההשקעה.
+                    </p>
+                    <div class="location-and-rating disp-flex flex-just-cont-between flex-align-items-center">
+                        <div class="location">
+                            <img src="/src/images/sprites/icons/location.png" alt="Location">
+                            <span>פתח תקווה</span>
+                        </div>
+                        <div class="rating width-fit-content">
+                            <img src="/src/images/sprites/icons/star-unmarked.png" alt="Grey star">
+                            <img src="/src/images/sprites/icons/star-unmarked.png" alt="Grey star">
+                            <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                            <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                            <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="disp-flex flex-dir-col show-xs">
+                    <h3>אלמוג יצחקי סוכנות אלמוגים</h3>
+                    <div class="disp-flex flex-dir-row flex-align-items-center">
+                        <div class="xs-rating disp-flex flex-dir-col">
+                            <div class="rating width-fit-content">
+                                <img src="/src/images/sprites/icons/star-unmarked.png" alt="Grey star">
+                                <img src="/src/images/sprites/icons/star-unmarked.png" alt="Grey star">
+                                <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                                <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                                <img src="/src/images/sprites/icons/star-marked.png" alt="Yellow star">
+                            </div>
+                            <div class="location">
+                                <img src="/src/images/sprites/icons/location.png" alt="Location">
+                                <span>פתח תקווה</span>
+                            </div>
+                        </div>
+                        <div class="xs-price disp-flex flex-dir-col border-right-main-1">
+                            <div>
+                                <span class="price">483</span>
+                                <span class="shekel">&#8362</span>
+                            </div>
+                            <p>
+                                פרמיה חודשית
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="purchase disp-flex flex-dir-col border-right-main-1">
+                    <div class="hide-xs">
+                        <span class="price">483</span>
+                        <span class="shekel">&#8362</span>
+                        <p>
+                            פרמיה חודשית
+                        </p>
+                    </div>
+                    <button class="no-border width-fit-content">
+                        <img src="/src/images/sprites/icons/Shopping Cart Loaded_000000_75.png" alt="Shopping Cart">
+                        <span class="bold hide-xs">לרכישה</span>
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="paging bold hide-xs">
+                <span role="button">1</span>
+                <span role="button">2</span>
+                <span role="button">3</span>
+                <span role="button">4</span>
+                <span role="button">5</span>
+                <span role="button">6</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+<!--    FOOTER    -->
+
+<footer class="txt-color">
+
+    <!--    FOOTER UPPER        -->
+
+    <div class="footer-upper">
+        <div class="footer-wrapper disp-flex fle flex-just-cont-between center-box flex-wrap">
+            <div class="container-compie hide-xs">
+                <h4 class="footer-compie pad-compie width-fit-content">
+                    Compie
+                </h4>
+                <p>
+                    זלצבצזסבצלסצךזצזסבלךלצזבס
+                    דשדגשךדגשצדשצדשךדשדשךצ
+                    דשגמדשגמדשמדשדשג
+                </p>
+            </div>
+            <div class="hide-xs">
+                <h4>
+                    סוכנים
+                </h4>
+                <ul>
+                    <li><a href="">הרשמה למערכת</a></li>
+                    <li><a href="">צור קשר</a></li>
+                    <li class="agents-link rounded-box width-fit-content"><a class="bold" href="">כניסת
+                            סוכנים</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hide-xs">
+                <h4>
+                    פרטים חשובים
+                </h4>
+                <ul>
+                    <li><a href="">תנאי שימוש</a></li>
+                    <li><a href="">מדיניות פרטיות</a></li>
+                    <li><a href="">צור קשר</a></li>
+                </ul>
+            </div>
+            <div class="hide-xs">
+                <h4>
+                    עקבו אחרינו
+                </h4>
+                <ul class="follow-us-links">
+                    <li>
+                        <a href=""><img class="margin-left-1" src="/src/images/sprites/icons/facebook.png" alt="">פייסבוק</a>
+                    </li>
+                    <li><a href=""><img class="margin-left-1" src="/src/images/sprites/icons/tweeter.png" alt="">טוויטר</a>
+                    </li>
+                    <li><a href=""><img class="margin-left-1" src="/src/images/sprites/icons/google-plus.png" alt="">גוגל
+                            פלוס</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="container-stay-updated">
+                <h4>
+                    הישאר מעודכן
+                </h4>
+                <p>
+                    הירשם לרשימת התפוצה שלנו ואנו נדאג לעדכן אותך בכל המידע החשוב.
+                </p>
+                <div class="mail-input disp-flex flex-align-items-center rounded-box">
+                    <img class="pad-left-1" src="/src/images/sprites/icons/white-mail.png" alt="">
+                    <input class="no-border" type="email" placeholder='כתובת הדוא"ל שלך'>
+                    <img class="" src="/src/images/sprites/icons/check.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--    FOOTER LOWER    -->
+
+    <div class="footer-lower">
+        <div class="footer-wrapper center-box disp-flex flex-just-cont-between">
+            <p>כל הזכויות שמורות <span class="show-xs">
+                    ל 2014 <span class="bold">Trusty</span>
+                </span>
+            </p>
+            <p>UI &amp; DESIGN BY: <span class="bold">AVIOZ</span></p>
+        </div>
+    </div>
+</footer>
+
+<script>
+
+    const modalBtn = document.getElementById('modalBtn');
+    const closeModal = document.getElementById('close');
+    const modal = document.getElementById('modal');
+    const modalContent = document.getElementById('modal-content');
+    const sideContent = document.getElementById('side-content');
+
+    modalBtn.onclick = () => {
+        modal.style.display = 'block'
+        const insertTarget = modalContent.lastElementChild
+        insertTarget.insertAdjacentElement('beforebegin', sideContent)
+        setTimeout(() => {
+            modalContent.style.width = '80%'
+        }, 0)
+    }
+
+    closeModal.onclick = () => {
+        onCloseModal()
+    }
+
+    window.onclick = event => {
+        if (event.target === modal) {
+            onCloseModal()
+        }
+    };
+
+    function onCloseModal() {
+        const insertTarget = document.getElementById("side-insert-target")
+        insertTarget.insertAdjacentElement('afterbegin', sideContent)
+        modal.style.display = 'none'
+        modalContent.style.width = '0'
+    }
+
+
+</script>

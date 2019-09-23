@@ -1,0 +1,135 @@
+@import 'variables';
+@import '../utils/mixins';
+
+footer {
+  font-size: 1.1rem;
+  color: $footer-white-txt;
+  @include breakpoint(lg) {
+    font-size: 1.2rem;
+  }
+  @include breakpoint(md) {
+    font-size: 1.1rem;
+  }
+
+  .footer-wrapper {
+    width: $footer-width / $page-width * 100%;
+    li {
+      @include margin-bottom();
+    }
+    @include breakpoint(xs) {
+      width: 95%;
+    }
+  }
+
+  .footer-upper {
+    padding: 3.5% 0 2.5% 0;
+    @include bgc($footer-upper-bgc);
+
+    h4 {
+      @include margin-bottom();
+    }
+    @include breakpoint(sm) {
+      .footer-wrapper {
+        flex-direction: column;
+        align-items: center;
+        div {
+          @include txt-align(center);
+        }
+        ul {
+          @include pad-bottom(1.8rem);
+        }
+      }
+    }
+  }
+
+  .container-compie {
+    max-width: $footer-compie-container-width / $footer-width * 100%;
+    @include border-left(2px, solid, $footer-border-color);
+    p {
+      max-width: $footer-compie-paragraph-width / $footer-compie-container-width * 100%;
+    }
+    @include breakpoint(lg) {
+      order: -1;
+      max-width: 40%;
+      border-left: none;
+      @include pad-bottom(2rem);
+    }
+  }
+
+  .footer-compie {
+    color: $txt-color-dark;
+    margin-bottom: .2rem;
+    @include bgc($footer-white-txt);
+    border-radius: 3px;
+    font-size: 22px;
+    letter-spacing: 1px;
+    line-height: 24px;
+  }
+
+  .container-stay-updated {
+    @include border-right(2px, solid, $footer-border-color);
+    @include pad-right($footer-stay-updated-pad-r-width / $footer-width * 100%);
+    max-width: $footer-stay-updated-container-width / $footer-width * 100%;
+    input {
+      width: 100%;
+    }
+    @include breakpoint(lg) {
+      order: -1;
+      max-width: 60%;
+      border-right: none;
+      @include pad-bottom(2rem);
+    }
+    @include breakpoint(sm) {
+      max-width: 100%;
+    }
+    @include breakpoint(xs) {
+      & {
+        @include margin-center();
+      }
+      h4, p {
+        @include txt-align(center);
+        @include margin-center();
+        @include pad-top();
+        max-width: 80%;
+      }
+    }
+  }
+
+  .follow-us-links {
+    img {
+      float: right;
+      display: block;
+      margin: auto 0 auto .5rem;
+    }
+  }
+
+  .rounded-box {
+    @include margin-top();
+    @include bgc(#fff);
+    border-radius: 18px;
+    a {
+      color: $txt-color-dark;
+    }
+  }
+
+  .agents-link {
+    padding: .3rem 1rem;
+  }
+
+  .mail-input {
+    padding: .7rem 1rem;
+  }
+
+  .footer-lower {
+    padding: .7% 0;
+    background-color: $footer-lower-bgc;
+  }
+
+}
+
+
+
+
+
+
+

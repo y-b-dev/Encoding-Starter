@@ -1,0 +1,17 @@
+{
+  "name": "encoding",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Compie <info@compie.co.il>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/compie-technologies/encoding-starter",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

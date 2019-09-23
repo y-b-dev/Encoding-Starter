@@ -1,0 +1,9 @@
+// set retina background (x2 on size)
+@mixin background-image-retina($image, $width, $height) {
+  @media (-webkit-min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi) {
+    /* on retina, use image that's scaled by 2 */
+    background-image: url($image);
+    background-size: $width $height;
+  }
+}

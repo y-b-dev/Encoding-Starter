@@ -1,0 +1,105 @@
+/**
+ * Buttons custom mixins examples
+ */
+@mixin button($type) {
+  position: relative;
+  display: inline-block;
+  @include padding(10px,30px,10px,30px);
+  border: 0;
+  @include border-radius(20px,20px,20px,20px);
+  text-decoration: none;
+  min-width: 160px;
+  height: 40px;
+  @include text-align(center);
+
+  &:hover, &:visited, &:link, &:active{
+    text-decoration: none;
+  }
+
+  @if ($type == 'default_button'){
+    color: $cl_base;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: $cl_primary;
+    @include responsive-text-size('defualt_button');
+    transition: all 0.5s;
+
+    &:hover{
+      text-decoration: none;
+      color: $cl_white;
+      background: $cl_blue;
+    }
+
+    &.successBtn{
+      background: $cl_shineGreen;
+    }
+  }
+
+  @if ($type == 'light_button'){
+    @include padding(11px,20px,11px,20px);
+    border: 1px solid $cl_primary;
+    @include border-radius(100px,100px,100px,100px);
+    @include responsive-text-size('forms_button');
+    color: $cl_primary;
+    background: $cl_base;
+
+    &:hover{
+      text-decoration: none;
+      color: $cl_primary;
+    }
+
+  }
+
+  @if ($type == 'light_button_icon'){
+    @include padding(11px,20px,11px,0);
+    border: 1px solid $cl_primary;
+    @include border-radius(100px,100px,100px,100px);
+    @include responsive-text-size('forms_button');
+    color: $cl_primary;
+    background: $cl_base;
+
+    &:hover{
+      text-decoration: none;
+      color: $cl_primary;
+    }
+
+  }
+
+  @if ($type == 'transparent'){
+    @include padding(11px,20px,11px,20px);
+    border: 1px solid $cl_base;
+    @include border-radius(100px,100px,100px,100px);
+    @include responsive-text-size('forms_button');
+    color: $cl_base;
+    background: $cl_transparent;
+
+    &:hover{
+      color: $cl_base;
+      text-decoration: none;
+    }
+  }
+
+  &.rightIcon{
+    i{
+      position: absolute;
+      top: calc(50% - 10px);
+      @include right(12px);
+      font-size: 20px;
+      @include Material;
+    }
+  }
+
+}
+
+@mixin whiteButton($color, $width, $height){
+  color: $color;
+  background-color: $windowColor;
+  width: $width;
+  height: $height;
+  display: inline-block;
+  line-height: $height;
+  text-align:center;
+  border-radius: 20px;
+  margin-left: 5px;
+  border:none;
+}

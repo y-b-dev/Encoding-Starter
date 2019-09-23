@@ -1,0 +1,365 @@
+
+//@import "~normalize-scss";
+//@include normalize();
+
+@import "base/config";
+
+// Utils (helpers, functions, mixins and etc..)
+// @import "utils/typography";
+// @import "utils/text";
+// @import "utils/retina";
+// @import "utils/visually-hidden";
+// @import "utils/shapes";
+// @import "utils/elements-middle";
+ @import "utils/sprites";
+// @import "utils/font-face";
+// @import "utils/buttons";
+// @import "utils/tooltips";
+// @import "utils/global";
+
+// Start css (html, body, containers, font and etc..)
+// @import "base/fonts";
+// @import "base/global";
+// @import "base/buttons";
+// @import "base/tabs";
+
+// My imports and styles
+
+@import "utils/mixins";
+@import "base/variables";
+@import "base/header";
+@import "base/footer";
+@import "base/main";
+
+@font-face {
+  font-family: "my-font";
+  src: url("/src/fonts/fbspoilersp-regularwebfont.woff");
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: my-font;
+  font-size: 16px;
+  line-height: 18px;
+  //min-width: 320px;
+  direction: rtl;
+  //word-break: break-word;
+  word-wrap: break-word;
+  text-align: right;
+  @include bgc($main-bgc-primary);
+}
+
+.full-width {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $footer-white-txt;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+.filter-select {
+  @include filter-select();
+  font-size: 1.1rem;
+  line-height: 18px;
+  color: $txt-color-light;
+  @include breakpoint(lg) {
+    font-size: 0.9rem;
+  }
+  @media (max-width: 1150px) {
+    font-size: 0.8rem;
+  }
+  @include breakpoint(md) {
+    font-size: 0.75rem;
+  }
+}
+
+.disp-flex {
+  @include disp(flex);
+}
+
+.flex-align-items-center {
+  @include flex-align-items();
+}
+
+.flex-align-content-between {
+  align-content: space-between;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-just-cont-between {
+  @include flex-just-cont();
+}
+
+.flex-just-cont-even {
+  @include flex-just-cont(space-evenly);
+}
+
+.flex-just-cont-around {
+  @include flex-just-cont(space-around);
+}
+
+.flex-dir-col {
+  flex-direction: column;
+}
+
+.flex-dir-row {
+  flex-direction: row;
+}
+
+.flex-auto {
+  flex: auto;
+}
+
+
+.width-fit-content {
+  width: fit-content;
+}
+
+.primary-wrapper {
+  width: $wrapper-width;
+  @media (max-width: $wrapper-width + 9px) {
+    width: 100%;
+  }
+}
+
+.details-for-filtering {
+  width: 95%;
+  font-size: 1.1rem;
+  min-width: 131px;
+  @include pad-top(1rem);
+  p {
+    @include pad-bottom(1rem);
+    @include margin-bottom(1rem);
+  }
+  select {
+    @include margin-bottom(.7rem);
+  }
+}
+
+.white-bordered-box {
+  background-color: $main-bgc-secondary !important;
+  @include border(1px, solid, $main-border-color);
+  padding: .5rem;
+}
+
+.down-arrow-select {
+  @include icon-select("arrow");
+}
+
+.calendar-select {
+  @include icon-select("calendar");
+}
+
+.plus-select {
+  @include icon-select("plus");
+}
+
+.yes-no-container {
+  @include margin-top();
+  padding: 1rem 0;
+}
+
+.yes-no {
+  @include txt-align(center);
+  label {
+    width: 36px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: block;
+    position: relative;
+    @include margin-right(.3rem);
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    &:hover input ~ span {
+      background-color: $header-bgc !important;
+      opacity: 0.7;
+    }
+
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      &:checked ~ span {
+        background-color: $header-bgc !important;
+        opacity: 0.7;
+      }
+    }
+
+    span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 36px;
+      width: 36px;
+    }
+
+  }
+}
+
+
+.question {
+  padding: 0 0 0 6px !important;
+  margin: 0 !important;
+  width: 67%;
+  @media (max-width: 1150px) {
+    font-size: 1.1rem;
+  }
+  @include breakpoint(md) {
+    font-size: 0.95rem;
+  }
+}
+
+.border-top-main-1 {
+  @include border-top(1px, solid, $main-border-color);
+}
+
+.border-bottom-main-1 {
+  @include border-bottom(1px, solid, $main-border-color);
+}
+
+.border-right-main-1 {
+  @include border-right(1px, solid, $main-border-color);
+}
+
+.pad-compie {
+  padding: 0.2rem 0.4rem;
+}
+
+.pad-right-1 {
+  @include pad-right();
+}
+
+.pad-right-2 {
+  @include pad-right(1.5rem);
+}
+
+.pad-left-1 {
+  @include pad-left();
+}
+
+.pad-left-2 {
+  @include pad-left(1.8rem);
+}
+
+.margin-left-1 {
+  @include margin-left();
+}
+
+.margin-right-1 {
+  @include margin-right();
+}
+
+.no-border {
+  border: none;
+}
+
+.center-box {
+  @include margin-center;
+}
+
+.txt-align-center {
+  @include txt-align(center);
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.hide-xs {
+  @include breakpoint(xs) {
+    display: none !important;
+  }
+}
+
+.show-xs {
+  display: none;
+  @include breakpoint(xs) {
+    display: initial;
+  }
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+// End of my classes
+
+.content {
+  text-align: center;
+  .title {
+    font-size: 84px;
+    font-weight: 100;
+    @include margin(0, 0, 0, 20px)
+  }
+  .responsive-image {
+    width: auto;
+    height: 80px;
+    opacity: 0.4;
+  }
+  .links {
+    @include margin(40px, 0, 0, 0);
+    & > a {
+      border-radius: 5px;
+      color: #636b6f;
+      padding: 0 25px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .1rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      position: relative;
+      &.website {
+        &:after {
+          content: ' ';
+          display: block;
+          opacity: 0.3;
+          position: absolute;
+          top: -14px;
+          bottom: 0;
+          @include left(7px);
+          @include right(0px);
+          transform: scale(0.4);
+          @include retina-sprite($sp-github-group);
+        }
+      }
+      &.github {
+        &:after {
+          content: ' ';
+          display: block;
+          opacity: 0.3;
+          position: absolute;
+          top: -22px;
+          bottom: 0;
+          @include left(-12px);
+          @include right(0px);
+          transform: scale(0.4);
+          @include retina-sprite($sp-www-group);
+        }
+      }
+    }
+  }
+}

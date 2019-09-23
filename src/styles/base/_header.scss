@@ -1,0 +1,193 @@
+@import 'variables';
+@import '../utils/mixins';
+
+nav {
+  @include breakpoint(xs) {
+    display: block;
+  }
+  display: none;
+  @include pad-top();
+  font-size: 1.2rem;
+  .nav-box {
+    float: right;
+    @include margin-top();
+  }
+  .header-compie-trusty {
+    float: left;
+  }
+  input {
+    display: none;
+    &:checked + .menu {
+      max-height: 100%;
+      transition: max-height 1.5s ease-in-out;
+    }
+  }
+  label {
+    display: block;
+    cursor: pointer;
+    height: 1.2rem;
+    width: 1.1rem;
+    @include background("/src/images/sprites/icons/menu.png");
+  }
+  .menu {
+    max-height: 0;
+    overflow: hidden;
+    @include bgc($footer-upper-bgc);
+    @include margin-top(2.5rem);
+    transition: max-height 0.5s cubic-bezier(0.090, 0.550, 0.500, 0.750);
+    li {
+      @include pad-bottom();
+      @include pad-top();
+      @include border-bottom(1px, solid, black);
+      &:hover {
+        @include bgc($footer-lower-bgc);
+      }
+    }
+  }
+}
+
+header {
+  color: #33455d;
+  @include breakpoint(xs) {
+    display: block !important;
+  }
+  .bgc-wrapper {
+    @include bgc($header-bgc);
+  }
+  .header-top {
+    @include pad-top($nav-offset-from-top);
+    .border-r {
+      @include border-right(1px, solid, $txt-color-dark)
+    }
+  }
+
+  .search-box {
+    @include margin-right(1.5rem);
+    select {
+      @include filter-select(7rem);
+      @include icon-select("arrow_bold", 0);
+      font-size: 17px;
+      line-height: 18px;
+    }
+  }
+
+  .user-box {
+    @include margin-left(1.5rem);
+    @include breakpoint(sm) {
+      margin: 20px auto  !important;
+      display: block !important;
+    }
+  }
+  .header-compie-trusty {
+    color: $header-compie-txt;
+    @include bgc($txt-color-dark);
+    font-size: 22px;
+    letter-spacing: 1px;
+    line-height: 24px;
+  }
+
+  .header-content {
+    max-width: $header-content-width;
+    padding: 4% 0 8% 0;
+    @include breakpoint(xs) {
+      padding: 3rem 0 2rem 0;
+      button {
+        cursor: pointer;
+      }
+    }
+    h1 {
+      @include margin-bottom(5%);
+      @include breakpoint(md) {
+        font-size: 3rem;
+      }
+    }
+    p {
+      line-height: 31px;
+      font-size: 1.6rem;
+      letter-spacing: 1.5px;
+      @include breakpoint(md) {
+        font-size: 1.4rem;
+      }
+    }
+    button {
+      @include margin-top();
+      @include bgc(red);
+      border-radius: 20px;
+      padding: .7rem 3rem;
+      color: $footer-white-txt;
+      font-size: 1rem;
+    }
+  }
+
+  .right-curly-border {
+    border-bottom-right-radius: 10px;
+  }
+
+  .left-curly-border {
+    border-bottom-left-radius: 10px;
+  }
+
+
+  #modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      &:hover, &:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+      }
+    }
+
+    .modal-content {
+      background-color: $main-bgc-primary;
+      margin: auto;
+      padding: 20px;
+      width: 0;
+      color: $txt-color-light;
+      border-radius: 5px;
+      transition: width 500ms cubic-bezier(0.000, 1.055, 0.845, 0.680);
+      h2 {
+        border: none;
+      }
+      p, select {
+        font-size: 1.2rem;
+      }
+    }
+
+    .question {
+      text-align: right;
+    }
+
+    .getOffers {
+      color: #fff;
+      @include bgc($header-bgc);
+      border-radius: 20px;
+      padding: 15px 20px;
+      @include margin-top(1.5rem);
+      cursor: pointer;
+    }
+
+  }
+
+
+}
+
+
+
+
+
+
+

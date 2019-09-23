@@ -1,0 +1,95 @@
+// =============================================================================
+// String Replace
+// =============================================================================
+ 
+ @function str-replace($string, $search, $replace: "") {
+	$index: str-index($string, $search);
+
+	@if $index {
+		@return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+	}
+
+	@return $string;
+}
+
+
+// =============================================================================
+// Break points
+// =============================================================================
+
+// Get break point
+@function breakpoint($breakpoint-name) {
+  $breakpoint-value: map-get($breakpoints, $breakpoint-name);
+
+  @if $breakpoint-value {
+    @return $breakpoint-value;
+  }
+
+  @warn "Breakpoint '#{$breakpoint-name}' not found in $breakpoints";
+}
+
+// Write media query
+@mixin respond-above($breakpoint-name) {
+  $breakpoint-value: breakpoint($breakpoint-name);
+
+  @if $breakpoint-value {
+    @media screen and (max-width: $breakpoint-value) {
+      @content;
+    }
+  }
+}
+
+// Write classes hidden and visible to each breakpoint
+@each $breakpoint-name, $breakpoint-value in $breakpoints {
+  .hidden_above_#{$breakpoint-name}{
+    @media screen and (min-width: $breakpoint-value) {
+      display: none !important;
+    }
+  }
+  .hidden_below_#{$breakpoint-name}{
+    @media screen and (max-width: $breakpoint-value) {
+      display: none !important;
+    }
+  }
+  .visible_above_#{$breakpoint-name}{
+    @media screen and (min-width: $breakpoint-value) {
+      display: block !important;
+    }
+  }
+  .visible_below_#{$breakpoint-name}{
+    @media screen and (max-width: $breakpoint-value) {
+      display: block !important;
+    }
+  }
+}
+
+// =============================================================================
+// Material Icons - https://design.google.com/icons
+// =============================================================================
+
+/* Get meterial icon */
+@mixin Material{
+  font-family: 'Material';
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  white-space: nowrap;
+  word-wrap: normal;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+// =============================================================================
+// Rotate
+// =============================================================================
+
+/* make rotate */
+@mixin Rotate($deg){
+  -webkit-transform: rotate($deg+deg);
+  -moz-transform: rotate($deg+deg);
+  -ms-transform: rotate($deg+deg);
+  -o-transform: rotate($deg+deg);
+  transform: rotate($deg+deg);
+}
